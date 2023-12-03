@@ -170,11 +170,23 @@ a:link {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpg);
+    url(../images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg@2x.jpg);
+  }
 }
 
 .hero-box {
