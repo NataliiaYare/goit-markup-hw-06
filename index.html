@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet" />
-  <title>Document</title>
+  <title>Document Nataliia</title>
 </head>
 
 <body>
@@ -22,15 +22,21 @@
 
   <!--============= Header =======================-->
   <header class="top-header">
-    <div class="container">
+    <div class="container page-header-container">
       <nav class="navigation-list">
-        <a class="logo" href="./index.html">Web<span class="logo-studio-heder">Studio</span></a>
+        <a class="logo" href="./index.html">Web<span class="logo-studio-header">Studio</span></a>
         <ul class="navigation">
           <li><a href="./index.html" class="navigation-item current">Studio</a></li>
           <li><a href="" class="navigation-item">Portfolio</a></li>
           <li><a href="" class="navigation-item">Contacts</a></li>
         </ul>
       </nav>
+      <button class="mobile-open-btn" type="button">
+        <svg class="mobile-open-btn-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
       <address class="contact-us">
         <ul class="contact-us-list">
           <li class="contact-us-item">
@@ -52,7 +58,7 @@
         <button type="button" class="hero-button">Order Service</button>
       </div>
     </section>
-    <!-- ======================= About us section =====================-->
+    <!-- ======================= Our stranghs section =====================-->
     <section class="our-strangths-section">
       <div class="our-strangths-section-box container">
         <h2 class="visually-hidden">Our strangths</h2>
@@ -109,7 +115,7 @@
       </div>
     </section>
     <!-- ======================= Our team section =============================-->
-    <section class="our-team-section">
+    <!-- <section class="our-team-section">
       <div class="our-team-section-box container">
         <h2 class="our-team-title">Our Team</h2>
         <ul class="our-team-list">
@@ -270,9 +276,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!--=================================== Our Portfolio =========================-->
-    <section class="portfolio-section">
+    <!-- <section class="portfolio-section">
       <div class="portfolio-section-box container">
         <h2 class="our-portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -519,10 +525,10 @@
           </li>
         </ul>
       </div>
-    </section>
-  </main>
-  <!--==================================== Footer ===========================-->
-  <footer class="footer-style">
+    </section> -->
+    <!-- </main> -->
+    <!--==================================== Footer ===========================-->
+    <!-- <footer class="footer-style">
     <div class="footer-style-box container">
 
       <div class="logo-paragraph-block">
@@ -581,72 +587,132 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
 
-  <!-- ======================Backdrop============================== -->
-  <div class="backdrop ">
-    <div class="modal">
-      <button class="modal-close-btn" type="button" aria-label="modal close button">
-        <svg class="modal-close-btn-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <p class="modal-cta-paragraph">Leave your contacts and we will call you back</p>
+    <!-- ======================Backdrop============================== -->
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button" aria-label="modal close button">
+          <svg class="modal-close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-cta-paragraph">Leave your contacts and we will call you back</p>
 
-      <form class="form-modal">
-        <div class="cta-form-wrapper">
-          <label class="cta-form-label" for="user-name">Name
-          </label>
-          <div class="cta-form-input-icon-wrapper">
-            <input class="cta-form-input" type="text" name="user-name" id="user-name" required
-              pattern="[a-zA-Zа-яА-ЯІіЇїєЄҐґйЙ']+" title="Nataliia">
-            <svg class="cta-form-input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="cta-form-wrapper">
-          <label class="cta-form-label" for="user-telephone">Phone</label>
-          <div class="cta-form-input-icon-wrapper">
-            <input class="cta-form-input" type="tel" name="user_telephone" id="user-telephone" required
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
-            <svg class="cta-form-input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="cta-form-wrapper">
-          <label class="cta-form-label" for="user-email">Email</label>
-          <div class="cta-form-input-icon-wrapper">
-            <input class="cta-form-input" type="email" name="user_email" id="user-email" required>
-            <svg class="cta-form-input-icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="cta-form-wrapper-txt">
-          <label class="cta-form-label" for="user-comment">Comment</label>
-          <textarea class="cta-form-textarea" id="user-comment" placeholder="Text input" name="user-comment"></textarea>
-        </div>
-        <div class="cta-checkbox-wrapper">
-          <input class="cta-checkbox visually-hidden" type="checkbox" name="user-privacy" value="true" id="user-privacy"
-            required>
-          <label class="cta-checkbox-label" for="user-privacy">
-            <span class="cta-own-checkbox">
-              <svg class="cta-own-checkbox-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
+        <form class="form-modal">
+          <div class="cta-form-wrapper">
+            <label class="cta-form-label" for="user-name">Name
+            </label>
+            <div class="cta-form-input-icon-wrapper">
+              <input class="cta-form-input" type="text" name="user-name" id="user-name" required
+                pattern="[a-zA-Zа-яА-ЯІіЇїєЄҐґйЙ']+" title="Nataliia">
+              <svg class="cta-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="privacy-policy" href="/">Privacy Policy</a>
-          </label>
-        </div>
-        <button class="cta-button" type="submit">Send</button>
-      </form>
+            </div>
+          </div>
+          <div class="cta-form-wrapper">
+            <label class="cta-form-label" for="user-telephone">Phone</label>
+            <div class="cta-form-input-icon-wrapper">
+              <input class="cta-form-input" type="tel" name="user_telephone" id="user-telephone" required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx">
+              <svg class="cta-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="cta-form-wrapper">
+            <label class="cta-form-label" for="user-email">Email</label>
+            <div class="cta-form-input-icon-wrapper">
+              <input class="cta-form-input" type="email" name="user_email" id="user-email" required>
+              <svg class="cta-form-input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="cta-form-wrapper-txt">
+            <label class="cta-form-label" for="user-comment">Comment</label>
+            <textarea class="cta-form-textarea" id="user-comment" placeholder="Text input"
+              name="user-comment"></textarea>
+          </div>
+          <div class="cta-checkbox-wrapper">
+            <input class="cta-checkbox visually-hidden" type="checkbox" name="user-privacy" value="true"
+              id="user-privacy" required>
+            <label class="cta-checkbox-label" for="user-privacy">
+              <span class="cta-own-checkbox">
+                <svg class="cta-own-checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span class="privacy-policy-wrapper">
+                I accept the terms and conditions of the
+                <a class="privacy-policy" href="/">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button class="cta-button" type="submit">Send</button>
+        </form>
+
+      </div>
 
     </div>
-  </div>
 
+    <!-- ================================ Backdrop end ============================ -->
+
+    <!-- ================================= Mobile menu ============================ -->
+    <div class="mobile-menu ">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn" type="button">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="navigation-mb-menu">
+          <li class="nav-mb-menu-item"><a href="./index.html" class="navigation-item-mb-menu current">Studio</a></li>
+          <li class="nav-mb-menu-item"><a href="" class="navigation-item-mb-menu">Portfolio</a></li>
+          <li class="nav-mb-menu-item"><a href="" class="navigation-item-mb-menu">Contacts</a></li>
+        </ul>
+        <ul class="contact-us-list-mb">
+          <li class="contact-us-item-mb">
+            <a href="mailto:info@devstudio.com" class="contacts-mb">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="contacts-mb current">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+        <ul class="soc-media-list-mb">
+          <li class="soc-media-list-item-mb">
+            <a href="#" class="social-list-link-mb">
+              <svg class="soc-list-icon-mb" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media-list-item-mb">
+            <a href="#" class="social-list-link-mb">
+              <svg class="soc-list-icon-mb" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media-list-item-mb">
+            <a href="#" class="social-list-link-mb">
+              <svg class="soc-list-icon-mb" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc-media-list-item-mb">
+            <a href="#" class="social-list-link-mb">
+              <svg class="soc-list-icon-mb" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
 </body>
 
 
