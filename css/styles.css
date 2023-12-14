@@ -466,9 +466,51 @@ a:link {
   background: #404bbf;
 }
 
-/* ------- /Hero Mobile Styles ============*/
+/*  /Hero Mobile Styles */
 
-/*======================  /Mobile Styles ================== */
+/* Our strangths Styles */
+.our-str-icon-box {
+  display: none;
+}
+
+.our-strangths-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 72px;
+  align-items: center;
+}
+
+.our-strangths-section {
+  padding: 96px 0;
+}
+
+.our-strangths-item {
+  max-width: 288px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-strangths-subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 111%; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.our-strangths-paragraph {
+  color: var(--SLATE, #434455);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+/* /Our strangths Styles */
 
 /* =================== Mobile Menu Styles only =============== */
 
@@ -607,6 +649,8 @@ a:link {
     fill: #f4f4fd;
   }
 }
+/* =================== Mobile Menu Styles only =============== */
+
 /* =============================== /Mobile Menu Styles ========================= */
 
 /* Media to fix mobile version container */
@@ -639,6 +683,21 @@ a:link {
     display: none;
   }
 
+  .current {
+    position: relative;
+    color: #404bbf;
+  }
+
+  .current::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
   .contact-us {
     display: flex;
   }
@@ -666,21 +725,6 @@ a:link {
     letter-spacing: 0.32px;
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  .current {
-    position: relative;
-    color: #404bbf;
-  }
-
-  .current::after {
-    content: "";
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #404bbf;
   }
 
   .navigation-item:hover,
@@ -731,68 +775,98 @@ a:link {
   /* /Hero Tablet Styles */
 
   /* Our strangths Styles */
+  .our-strangths-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-start;
+  }
 
+  .our-strangths-item {
+    width: calc((100% - 24px) / 2);
+    max-width: 356px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   /* /Our strangths Styles */
 
   /*======================  /Tablet Styles ================== */
+}
+/*======================  Desktop Styles ================== */
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+  /* Header Desktop Styles */
+  .top-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 
-  /*======================  Desktop Styles ================== */
-  @media screen and (min-width: 1158px) {
-    .container {
-      width: 1158px;
-    }
-    /* Header Desktop Styles */
-    .top-header {
-      padding-top: 24px;
-      padding-bottom: 24px;
-    }
+  .contact-us-list {
+    flex-direction: row;
+    gap: 40px;
+  }
 
-    .contact-us-list {
-      flex-direction: row;
-      gap: 40px;
-    }
+  .contacts {
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
 
-    .contacts {
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.02em;
-    }
+  .logo {
+    margin-right: 76px;
+  }
+  /* Header Desktop Styles */
 
-    .logo {
-      margin-right: 76px;
-    }
-    /* Header Desktop Styles */
+  /* Hero desktop Styles */
+  .hero {
+    padding: 188px 0 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg.jpg);
+  }
 
-    /* Hero Desktop Styles */
+  @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+    screen and (min-width: 1158px) and (min-resolution: 2dppx),
+    screen and (min-width: 1158px) and (min-device-pixel-ratio: 2) {
     .hero {
-      padding: 188px 0 188px 0;
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/bg.jpg);
+        url(../images/bg@2x.jpg);
     }
-
-    @media screen and (min-width: 1158px) and (min-resolution: 192dpi),
-      screen and (min-width: 1158px) and (min-resolution: 2dppx),
-      screen and (min-width: 1158px) and (min-device-pixel-ratio: 2) {
-      .hero {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-          ),
-          url(../images/bg@2x.jpg);
-      }
-    }
-
-    .hero-title {
-      margin-bottom: 48px;
-    }
-
-    /* Hero Desktop Styles */
   }
 
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* Hero Desktop Styles */
+
   /* Our strangths Styles */
+
+  .our-str-icon {
+    flex-shrink: 0;
+  }
+
+  .our-str-icon-box {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+    background: var(--CLOUD, #f4f4fd);
+    padding: 24px 100px;
+    margin-bottom: 8px;
+  }
 
   /* /Our strangths Styles */
 }
