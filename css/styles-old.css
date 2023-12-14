@@ -278,7 +278,7 @@ a:link {
 
 /* ============================ Our stranghts =======================*/
 /* ==Visually-hidden pattern== */
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -289,25 +289,25 @@ a:link {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-.our-strangths-list {
+} */
+/* .our-strangths-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-}
+} */
 
-.our-strangths-section {
+/* .our-strangths-section {
   padding: 120px 0;
-}
+} */
 
-.our-strangths-item {
+/* .our-strangths-item {
   width: calc((100% - 72px) / 4);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
+} */
 
-.our-str-icon {
+/* .our-str-icon {
   flex-shrink: 0;
 }
 
@@ -323,8 +323,8 @@ a:link {
   background: var(--CLOUD, #f4f4fd);
   padding: 24px 100px;
   margin-bottom: 8px;
-}
-.our-strangths-subtitle {
+} */
+/* .our-strangths-subtitle {
   color: #2e2f42;
   text-align: center;
   font-size: 20px;
@@ -332,18 +332,18 @@ a:link {
   line-height: 120%;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
-}
-
+} */
+/* 
 .our-strangths-paragraph {
   color: var(--SLATE, #434455);
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.32px;
-}
+} */
 
 /* =========================== Our team ======================================= */
 
-.our-team-title {
+/* .our-team-title {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -352,24 +352,24 @@ a:link {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   margin-bottom: 72px;
-}
-
+} */
+/* 
 .our-team-section {
   background-color: var(--CLOUD, #f4f4fd);
   padding: 120px 0;
-}
-
+} */
+/* 
 .our-team-list {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-}
+} */
 
-.naming {
+/* .naming {
   padding-top: 32px;
   padding-bottom: 32px;
   align-items: center;
-}
+} */
 
 .photo-card {
   width: calc((100% - 72px) / 4);
@@ -379,7 +379,7 @@ a:link {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
-.name {
+/* .name {
   color: #2e2f42;
   text-align: center;
   font-size: 20px;
@@ -387,7 +387,7 @@ a:link {
   line-height: 120%;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
-}
+} */
 
 .our-team-position {
   color: var(--SLATE, #434455);
