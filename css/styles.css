@@ -521,14 +521,17 @@ a:link {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-*/ .our-team-section {
+.our-team-section {
   background-color: var(--CLOUD, #f4f4fd);
   padding: 120px 0;
 }
 
 .our-team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  margin-bottom: 0;
+  align-items: center;
+  gap: 72px;
   flex-wrap: wrap;
 }
 
@@ -539,7 +542,6 @@ a:link {
 }
 
 .photo-card {
-  width: calc((100% - 72px) / 4);
   background: var(--WHITE, #ffffff);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -858,7 +860,7 @@ a:link {
   }
   /* /Hero Tablet Styles */
 
-  /* Our strangths Styles */
+  /* Our Strangths Tablet Styles */
   .our-strangths-list {
     flex-direction: row;
     gap: 24px;
@@ -880,11 +882,9 @@ a:link {
   .our-team-list {
     flex-direction: row;
     gap: 24px;
+    justify-content: center;
   }
 
-  .photo-card {
-    width: calc((100% - 24px) / 2);
-  }
   /* /Our Team Styles */
 
   /*======================  /Tablet Styles ================== */
